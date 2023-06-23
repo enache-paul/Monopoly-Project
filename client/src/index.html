@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Games</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/lobby.css">
+
+    <script src="assets/js/data-connector/error-handler.js"></script>
+    <script src="assets/js/data-connector/api-communication-abstractor.js"></script>
+    <script src="assets/js/initialiser.js"></script>
+    <script src="assets/js/lobby-logic.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Monopoly</h1>
+        <h2>Join or Create The Game</h2>
+    </header>
+    <main>
+        <form class="game-form">
+            <div class="flex-wrapper">
+                <label for="playername">Enter username</label>
+                <input id="playername" type="text" placeholder="Type your username">
+
+                <label for="number-of-players">Max Players</label>
+                <input id="number-of-players" type="number" max="6" min="2" value="2">
+            </div>
+            <div class="buttons-flexcontainer">
+                <input id="create-game" type="button" value="Create Game">
+                <input id="join-game" type="button" value="Join Selected Game" disabled>
+                <button type="submit" value="Submit">Display Available Games</button>
+            </div>
+
+        </form>
+
+        <div class="games-display">
+        </div>
+
+    </main>
+</body>
+</html>

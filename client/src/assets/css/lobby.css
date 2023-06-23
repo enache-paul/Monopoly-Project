@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap%27');
+
+:root {
+    --main-font: 'Josefin Sans', 'Helvetica', 'Arial', sans-serif;
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin: 1.4rem 0 1.4rem 0;
+}
+
+input[type="button"], button[type="submit"] {
+    width: 12rem;
+    height: 2rem;
+    margin: 0.5rem 0.8rem 0.5rem 0.8rem;
+    border-radius: 0.8rem;
+    transition-duration: 0.4s;
+    font-family: var(--main-font);
+}
+
+#number-of-players {
+    width: 3rem;
+    height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+input[type="button"]:hover, button[type="submit"]:hover {
+
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+label {
+    margin: 0.75rem 0 0.75rem 0;
+    text-align: center;
+}
+
+.buttons-flexcontainer {
+    margin-top: 1rem;
+}
+
+.games-display {
+
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.ongoing-game {
+
+    width: 42rem;
+    height: 6rem;
+    background-color: white;
+    border: 0.1rem solid black;
+    margin: 0.3rem 0 0.3rem 0;
+    transition-duration: 0.4s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+
+    display: inline-block;
+    margin: 0 4rem 0 2rem;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-form {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ongoing-game:hover {
+
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.ongoing-game:active {
+
+    transform: scale(1.05);
+}
+
+.selected-game {
+
+    transform: scale(1.1);
+    border: 0.2rem solid red;
+}

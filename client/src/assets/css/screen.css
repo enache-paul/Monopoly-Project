@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap%27');
+
+:root {
+    --test-color-board: grey;
+    --test-color-bottom: darkgrey;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    color: black;
+
+}
+
+
+.top {
+
+    height: 8rem;
+    width: 100%;
+    background-color: #bebfde;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.list-profile {
+
+    display: grid;
+    grid-template-columns: repeat(5, 7.646rem);
+    grid-template-rows: 8rem;
+    width: 40%;
+    justify-content: start;
+    border: solid black 0.1rem;
+
+}
+
+.player-profile {
+
+    display: flex;
+    width: 100%;
+    background-color: #2f2c40;
+    height: 7.775rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-left: 0.2rem solid black;
+    color: white;
+}
+
+.money-and-jail-flex {
+
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 7.775rem;
+    border: solid black 0.1rem;
+    border-left: none;
+}
+
+.balance {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 3.8rem;
+    align-items: center;
+    border-bottom: solid black 0.1rem;
+}
+
+.user-balance-title {
+    text-decoration: underline;
+}
+
+.get-out-jail-cards {
+    text-decoration: underline;
+}
+
+.user-balance {
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+    text-decoration: none;
+}
+
+.get-out-jail-cards {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 3.9rem;
+    align-self: start;
+    align-items: center;
+
+}
+
+.improvements-left {
+
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 7.775rem;
+    align-items: center;
+    border: solid black 0.1rem;
+    border-left: none;
+    text-decoration: underline;
+}
+
+.actions-list {
+
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 7.775rem;
+    align-items: center;
+    border: solid black 0.1rem;
+    border-left: none;
+}
+
+.buttons {
+
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    border: solid black 0.1rem;
+    border-left: none;
+}
+
+.button {
+    transition-duration: 0.4s;
+}
+
+.buttons-flex {
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+}
+
+.button {
+
+    width: 7.1rem;
+    height: 8rem;
+    border: 0.1rem solid black;
+    font-size: 1.07rem;
+    font-family:'Josefin Sans', Helvetica, Arial, sans-serif;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(1);
+}
+
+.leave-game {
+
+    background-color: rgba(255, 105, 105, 0.76);
+}
+
+.leave-game:hover {
+
+    background-color: rgba(255,52,44,0.91);
+}
+
+.properties, .auctions, .trade {
+
+    background-color: rgba(109, 121, 255, 0.76);
+}
+
+.properties:hover, .auctions:hover, .trade:hover {
+
+    background-color: #4e3fb6;
+}
+
+.flex-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.bottom {
+
+    height: 37.2rem;
+    width: 100%;
+    background-color: var(--test-color-board);
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.dice-container {
+
+    display: flex;
+    flex-direction: row;
+    height: 7rem;
+    width: 96rem;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dice {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.roll-button {
+
+    border: none;
+    background-color: white;
+    border-radius: 10rem;
+    height: 2rem;
+    width: 7rem;
+    font-size: 1.1rem;
+    box-shadow: 0.1rem 0.125rem 0.1rem;
+    transition-duration: 0.4s;
+    margin-top: 0.4rem;
+}
+
+.collect-debt-button {
+    border: none;
+    background-color: #ad97b6;
+    border-radius: 10rem;
+    height: 1.5rem;
+    width: 6.5rem;
+    box-shadow: 0.1rem 0.125rem 0.1rem;
+    transition-duration: 0.4s;
+    margin-top: 1.7rem;
+    margin-left: 1rem;
+}
+
+.roll-result {
+
+    font-size: 1.4rem;
+}
+
+.roll-button:hover, .collect-debt-button:hover {
+
+    background-color: #bebfde;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.roll-button:active {
+
+    background-color: #895ab6;
+    box-shadow: 0.05rem 0.065rem 0.05rem;
+    transform: scale(1.1);
+}
+
+.games-display ul {
+
+    margin-bottom: 3rem;
+
+}
+
+.board {
+
+    height: 20rem;
+    width: 100%;
+    background-color: var(--test-color-board);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*margin-left: 15rem;
+    margin-right: 15rem;*/
+
+}
+
+.tile {
+
+    width: 9.3rem;
+    height: 7.4rem;
+    background-color: white;
+    border: 0.05rem solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+    .go, .jail, .community-chest, .chance, .tax-income, .free-parking, .go-to-jail, .luxury-tax {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+.tile-name {
+
+    text-align: center;
+
+}
+
+.tile-price {
+
+    margin-bottom: 0.35rem;
+}
+
+.purchase-popup-background {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+}
+
+.purchase-popup {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24rem;
+    height: 24rem;
+    background-color: white;
+    position: absolute;
+    opacity: 100%;
+    z-index: 1;
+}
+
+.popup-message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.buy-property-button, .refuse-property-button {
+    width: 7rem;
+    height: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+.buy-property-button:hover, .refuse-property-button:hover {
+    cursor: pointer;
+}
+
+.player-position {
+
+    color: red;
+    background-color: black;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+}
+
+.tile-color-box {
+
+    width: 100%;
+    height: 1.7rem;
+    opacity: 0.60;
+}
+
+.current-player-turn {
+
+    border-bottom: 0.5rem solid red;
+}
+
+.close-popup-window {
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.properties-popup-background {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0.85;
+}
+
+.properties-popup {
+
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+    position: absolute;
+    opacity: 100%;
+    z-index: 1;
+}
+
+.properties-popup h2 {
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.properties-popup li {
+    margin-left: 2rem;
+}
+.properties-popup span {
+    font-weight: bold;
+}
+
+.waiting-for-players {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition-duration: 0.4s;
+}
+
+.waiting-message {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.loading-wheel {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    border-top: 0.6rem solid white;
+    border-bottom: 0.6rem solid white;
+    border-right: 0.6rem solid black;
+    border-left: 0.6rem solid black;
+    animation: rotate 1s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0); }
+    to { transform: rotate(360deg); }
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.hidden {
+    display: none;
+}
